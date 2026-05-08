@@ -3414,6 +3414,311 @@
  </div>
  <!-- /Toolbar -->
 
+    <!-- Filter -->
+    <div class="offcanvas offcanvas-start canvas-filter" id="filterShop">
+        <div class="canvas-wrapper">
+            <div class="canvas-header">
+                <div class="h5 title">Filters</div>
+                <span class="icon-X2 fs-24 link icon-close-popup" data-bs-toggle="offcanvas"></span>
+                <!-- <span class="icon-X2 link icon-close-popup fs-24 close-filter d-xl-none"></span> -->
+            </div>
+            <div class="canvas-body">
+                <div class="widget-facet">
+                    <div class="facet-title" data-bs-target="#category" role="button" data-bs-toggle="collapse"
+                        aria-expanded="true" aria-controls="category">
+                        <h6>Product Categories</h6>
+                        <span class="icon icon-CaretDown"></span>
+                    </div>
+                    <div id="category" class="collapse show">
+                        <ul class="collapse-body filter-group-check group-category">
+                            <li class="list-item">
+                                <a href="shop-default.html" class="label link">
+                                    <span class="cate-text">Bags</span>
+                                    <span class="count">(112)</span>
+                                </a>
+                            </li>
+                            <li class="list-item">
+                                <a href="shop-default.html" class="label link">
+                                    <span class="cate-text">Booking</span>
+                                    <span class="count">(32)</span>
+                                </a>
+                            </li>
+                            <li class="list-item">
+                                <a href="shop-default.html" class="label link">
+                                    <span class="cate-text">Clothing</span>
+                                    <span class="count">(42)</span>
+                                </a>
+                            </li>
+                            <li class="list-item">
+                                <a href="shop-default.html" class="label link">
+                                    <span class="cate-text">Women</span>
+                                    <span class="count">(65)</span>
+                                </a>
+                            </li>
+                            <li class="list-item">
+                                <a href="shop-default.html" class="label link">
+                                    <span class="cate-text">Men</span>
+                                    <span class="count">(13)</span>
+                                </a>
+                            </li>
+                            <li class="list-item">
+                                <a href="shop-default.html" class="label link">
+                                    <span class="cate-text">Shoes</span>
+                                    <span class="count">(52)</span>
+                                </a>
+                            </li>
+                            <li class="list-item">
+                                <a href="shop-default.html" class="label link">
+                                    <span class="cate-text">Uncategorized</span>
+                                    <span class="count">(14)</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="br-line"></div>
+                <div class="widget-facet">
+                    <div class="facet-title" data-bs-target="#price" role="button" data-bs-toggle="collapse"
+                        aria-expanded="true" aria-controls="price">
+                        <h6>Filter By Price</h6>
+                        <span class="icon icon-CaretDown"></span>
+                    </div>
+                    <div id="price" class="collapse show">
+                        <div class="collapse-body widget-price filter-price">
+                            <div class="price-val-range" id="price-value-range" data-min="0" data-max="200"></div>
+                            <div class="price-box tf-grid-layout tf-col-2">
+                                <div class="box-wrap">
+                                    <div class="price-val_wrap">
+                                        <span class="cl-text-2 text-body-1">$</span>
+                                        <div class="price-val" id="price-min-value"></div>
+                                    </div>
+                                </div>
+                                <div class="box-wrap">
+                                    <div class="price-val_wrap">
+                                        <span class="cl-text-2 text-body-1">$</span>
+                                        <div class="price-val" id="price-max-value"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="br-line"></div>
+                <div class="widget-facet">
+                    <div class="facet-title" data-bs-target="#size" role="button" data-bs-toggle="collapse"
+                        aria-expanded="true" aria-controls="size">
+                        <h6>Size</h6>
+                        <span class="icon icon-CaretDown"></span>
+                    </div>
+                    <div id="size" class="collapse show">
+                        <ul class="collapse-body filter-group-size">
+                            <li>
+                                <input class="ip-size d-none" type="checkbox" name="size" id="size-xs">
+                                <label for="size-xs" class="label-size">
+                                    <span class="size-text fw-medium">XS</span>
+                                </label>
+                            </li>
+                            <li>
+                                <input class="ip-size d-none" type="checkbox" name="size" id="size-s">
+                                <label for="size-s" class="label-size">
+                                    <span class="size-text fw-medium">S</span>
+                                </label>
+                            </li>
+                            <li>
+                                <input class="ip-size d-none" type="checkbox" name="size" id="size-m">
+                                <label for="size-m" class="label-size">
+                                    <span class="size-text fw-medium">M</span>
+                                </label>
+                            </li>
+                            <li>
+                                <input class="ip-size d-none" type="checkbox" name="size" id="size-l">
+                                <label for="size-l" class="label-size">
+                                    <span class="size-text fw-medium">L</span>
+                                </label>
+                            </li>
+                            <li>
+                                <input class="ip-size d-none" type="checkbox" name="size" id="size-xl">
+                                <label for="size-xl" class="label-size">
+                                    <span class="size-text fw-medium">XL</span>
+                                </label>
+                            </li>
+                            <li>
+                                <input class="ip-size d-none" type="checkbox" name="size" id="size-2xl">
+                                <label for="size-2xl" class="label-size">
+                                    <span class="size-text fw-medium">2XL</span>
+                                </label>
+                            </li>
+                            <li>
+                                <input class="ip-size d-none" type="checkbox" name="size" id="size-3xl">
+                                <label for="size-3xl" class="label-size">
+                                    <span class="size-text fw-medium">3XL</span>
+                                </label>
+                            </li>
+                            <li>
+                                <input class="ip-size d-none" type="checkbox" name="size" id="over-size">
+                                <label for="over-size" class="label-size over-size">
+                                    <span class="size-text fw-medium">Free Size</span>
+                                </label>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="br-line"></div>
+                <div class="widget-facet">
+                    <div class="facet-title" data-bs-target="#color" role="button" data-bs-toggle="collapse"
+                        aria-expanded="true" aria-controls="color">
+                        <h6>Colors</h6>
+                        <span class="icon icon-CaretDown"></span>
+                    </div>
+                    <div id="color" class="collapse show">
+                        <ul class="collapse-body filter-group-check group-check-color">
+                            <li class="list-item">
+                                <fieldset class="field-color">
+                                    <input type="radio" name="color" class="tf-check" id="color-pink">
+                                    <label for="color-pink" class="color bg-peach-blush"></label>
+                                </fieldset>
+                                <label for="color-pink" class="label">
+                                    <span class="color-text">Pink</span>
+                                    <span class="count">(16)</span>
+                                </label>
+                            </li>
+                            <li class="list-item">
+                                <fieldset class="field-color">
+                                    <input type="radio" name="color" class="tf-check" id="color-red">
+                                    <label for="color-red" class="color bg-crimson-red"></label>
+                                </fieldset>
+                                <label for="color-red" class="label">
+                                    <span class="color-text">Red</span>
+                                    <span class="count">(7)</span>
+                                </label>
+                            </li>
+                            <li class="list-item">
+                                <fieldset class="field-color">
+                                    <input type="radio" name="color" class="tf-check" id="color-beige">
+                                    <label for="color-beige" class="color bg-cream"></label>
+                                </fieldset>
+                                <label for="color-beige" class="label">
+                                    <span class="color-text">Beige</span>
+                                    <span class="count">(24)</span>
+                                </label>
+                            </li>
+                            <li class="list-item">
+                                <fieldset class="field-color">
+                                    <input type="radio" name="color" class="tf-check" id="color-orange">
+                                    <label for="color-orange" class="color bg-flame-orange"></label>
+                                </fieldset>
+                                <label for="color-orange" class="label">
+                                    <span class="color-text">Orange</span>
+                                    <span class="count">(17)</span>
+                                </label>
+                            </li>
+                            <li class="list-item">
+                                <fieldset class="field-color">
+                                    <input type="radio" name="color" class="tf-check" id="color-gray">
+                                    <label for="color-gray" class="color bg-sage-gray"></label>
+                                </fieldset>
+                                <label for="color-gray" class="label">
+                                    <span class="color-text">Gray</span>
+                                    <span class="count">(5)</span>
+                                </label>
+                            </li>
+                            <li class="list-item">
+                                <fieldset class="field-color">
+                                    <input type="radio" name="color" class="tf-check" id="color-purple">
+                                    <label for="color-purple" class="color bg-rosewood"></label>
+                                </fieldset>
+                                <label for="color-purple" class="label">
+                                    <span class="color-text">Purple</span>
+                                    <span class="count">(8)</span>
+                                </label>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="br-line"></div>
+                <div class="widget-facet">
+                    <div class="facet-title" data-bs-target="#availability" role="button" data-bs-toggle="collapse"
+                        aria-expanded="true" aria-controls="availability">
+                        <h6>Availability</h6>
+                        <span class="icon icon-CaretDown"></span>
+                    </div>
+                    <div id="availability" class="collapse show">
+                        <ul class="collapse-body filter-group-check">
+                            <li class="list-item">
+                                <input type="radio" name="availability" class="tf-check style-2" id="inStock">
+                                <label for="inStock" class="label">
+                                    <span class="cate-text">In stock</span>
+                                    <span class="count">(32)</span>
+                                </label>
+                            </li>
+                            <li class="list-item">
+                                <input type="radio" name="availability" class="tf-check style-2" id="outStock">
+                                <label for="outStock" class="label">
+                                    <span class="cate-text">Out of stock</span>
+                                    <span class="count">(2)</span>
+                                </label>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="br-line"></div>
+                <div class="widget-facet">
+                    <div class="facet-title" data-bs-target="#brand" role="button" data-bs-toggle="collapse"
+                        aria-expanded="true" aria-controls="availability">
+                        <h6>Brands</h6>
+                        <span class="icon icon-CaretDown"></span>
+                    </div>
+                    <div id="brand" class="collapse show">
+                        <ul class="collapse-body filter-group-check">
+                            <li class="list-item">
+                                <input type="radio" name="brand" class="tf-check style-2" id="nike">
+                                <label for="nike" class="label">
+                                    <span class="brand-text">Nike</span>
+                                    <span class="count">(112)</span>
+                                </label>
+                            </li>
+                            <li class="list-item">
+                                <input type="radio" name="brand" class="tf-check style-2" id="lv">
+                                <label for="lv" class="label">
+                                    <span class="brand-text">Louis Vuitton</span>
+                                    <span class="count">(32)</span>
+                                </label>
+                            </li>
+                            <li class="list-item">
+                                <input type="radio" name="brand" class="tf-check style-2" id="hermes">
+                                <label for="hermes" class="label">
+                                    <span class="brand-text">Hermes</span>
+                                    <span class="count">(42)</span>
+                                </label>
+                            </li>
+                            <li class="list-item disabled">
+                                <input type="radio" name="brand" class="tf-check style-2" id="gucci">
+                                <label for="gucci" class="label">
+                                    <span class="brand-text">Gucci</span>
+                                    <span class="count">(13)</span>
+                                </label>
+                            </li>
+                            <li class="list-item">
+                                <input type="radio" name="brand" class="tf-check style-2" id="zalando">
+                                <label for="zalando" class="label">
+                                    <span class="brand-text">Zalando</span>
+                                    <span class="count">(54)</span>
+                                </label>
+                            </li>
+                            <li class="list-item disabled">
+                                <input type="radio" name="brand" class="tf-check style-2" id="adidas">
+                                <label for="adidas" class="label">
+                                    <span class="brand-text">Adidas</span>
+                                    <span class="count">(93)</span>
+                                </label>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- /Filter -->
  <!-- Forgot Pass -->
  <div class="modal modalCentered fade modal-log modal-log_forgot" id="modalForgot">
   <div class="modal-dialog modal-dialog-centered">
@@ -4951,6 +5256,7 @@
  <script src="assets/js/jquery.min.js"></script>
  <script src="assets/js/swiper-bundle.min.js"></script>
  <script src="assets/js/bootstrap-select.min.js"></script>
+ <script src="assets/js/nouislider.min.js"></script> 
  <script src="assets/js/count-down.js"></script>
  <script src="assets/js/infinityslide.js"></script>
  <script src="assets/js/wow.min.js"></script>
